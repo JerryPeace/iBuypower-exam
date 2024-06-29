@@ -22,8 +22,8 @@ export default function Home() {
         <meta name="description" content="Discover the best seller gaming PCs, both prebuilt and custom." />
       </Head>
       <div className="text-center mb-4">
-        <h1 className="text-3xl font-bold">Best Seller Gaming PC</h1>
-        <h2 className="text-xl text-gray-400">Prebuild & Custom</h2>
+        <h1 className="text-3xl font-bold mb-1">Best Seller Gaming PC</h1>
+        <h2 className="text-xl font-bold">Prebuild & Custom</h2>
       </div>
       {data && <Slider data={productList} />}
       {isLoading && <FullLoading isLoading={isLoading} />}
