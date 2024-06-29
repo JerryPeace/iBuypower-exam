@@ -1,0 +1,19 @@
+version: "3"
+services:
+  neptune-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - ui-service
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_BASE_PATH=/iBuypower
+      - NEXT_CLIENT_API_PATH=http://localhost:3000/api/v1
+    restart: unless-stopped
+
+networks:
+  neptune-ui:
+    driver: bridge
