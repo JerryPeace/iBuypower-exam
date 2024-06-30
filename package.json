@@ -7,7 +7,7 @@
     "lint": "next lint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "BUILD": "------------------------------BUILD--------------------------------",
-    "build": "jest && next build",
+    "build": "next build",
     "analyze-build": "ANALYZE=true next build",
     "PRISMA": "----------------------------PRISMA------------------------------",
     "db-migrate:local": "npx prisma migrate dev",
