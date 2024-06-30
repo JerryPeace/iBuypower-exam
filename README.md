@@ -1,13 +1,3 @@
-
-# Contact APP
-
-Contact-app is a comprehensive full-stack solution developed using Next.js, providing a seamless experience for users to manage their contacts.
-
-### Prerequisites
-*  Requires Node version (v16.20.1)
-*  Requires pnpm 6
-
-
 ### Setup & Running Instructions
 
 ### 1. Running the UI service
@@ -18,20 +8,19 @@ Contact-app is a comprehensive full-stack solution developed using Next.js, prov
 
   ```
   docker-compose up
-  open http://localhost:3001/neptune
+  open http://localhost:3001
 
   docker-compose stop
   ```
 
   #### Development by local
   Clone the repository from GitHub and navigate to the root directory of the app.
-  (Requires pnpm 6)
 
   #### Run NEXT.JS server
   ```
   pnpm install
   pnpm run start:local
-  open http://localhost:3001/neptune
+  open http://localhost:3001
   ```
 
 ### 2. Running App Tests
@@ -39,10 +28,3 @@ Contact-app is a comprehensive full-stack solution developed using Next.js, prov
   ```
   pnpm run test
   ```
-
-### 3. Setting up the API service
-
-For the backend API service, refer to https://github.com/resumecompanion/taroko_server.git.
-
-Local API Endpoint:
-http://localhost:3000/api

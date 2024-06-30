@@ -14,11 +14,11 @@
     "db-migrate": "npx prisma migrate deploy",
     "generateSchema": "npx prisma generate",
     "START": "----------------------------START---------------------------------",
-    "start:local": "next dev -p 3002",
+    "start:local": "next dev",
     "start:dev": "next dev",
     "start:prd": "npx prisma migrate deploy && next start",
     "DEPLOYMENT": "------------------------DEPLOYMENT--------------------------",
-    "docker:image-build": "docker build -t neptune-web-image ."
+    "docker:image-build": "docker build -t iBuypower-web-image ."
   },
   "dependencies": {
     "@babel/core": "^7.18.6",

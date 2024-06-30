@@ -11,7 +11,7 @@ services:
     environment:
       - NODE_ENV=development
       - NEXT_PUBLIC_BASE_PATH=/iBuypower
-      - NEXT_CLIENT_API_PATH=http://localhost:3000/api/v1
+      - NEXT_CLIENT_API_PATH=http://localhost:3000/iBuypower/api/v1
     restart: unless-stopped
 
 networks:

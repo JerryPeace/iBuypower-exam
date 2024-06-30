@@ -1,4 +1,4 @@
-import { NEXT_PUBLIC_BASE_PATH } from '../../config';
+import { NEXT_PUBLIC_BASE_PATH } from '@@configs';
 
 export const routerConfig = {
   home: NEXT_PUBLIC_BASE_PATH,
