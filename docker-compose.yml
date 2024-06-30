@@ -1,6 +1,6 @@
 version: "3"
 services:
-  neptune-ui:
+  ui-service:
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,8 +10,9 @@ services:
       - "3001:3000"
     environment:
       - NODE_ENV=development
+      - NEXT_PUBLIC_BASE_PATH=/iBuypower
     restart: unless-stopped
 
 networks:
-  neptune-ui:
+  ui-service:
     driver: bridge
