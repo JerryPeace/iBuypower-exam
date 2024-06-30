@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
-import { FaAngleRight, FaAngleLeft } from 'react-icons/fa6';
 import Image from 'next/image';
 import Slider from 'react-slick';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa6';
 import { Computer } from 'types/computer';
+import { NEXT_PUBLIC_BASE_PATH } from '@@configs';
 
 const SliderComp = ({ data }: { data: Computer[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -64,7 +65,7 @@ const SliderComp = ({ data }: { data: Computer[] }) => {
                   </div>
                   <div className="w-auto h-60 my-5 relative">
                     <Image
-                      src={computer.image}
+                      src={NEXT_PUBLIC_BASE_PATH + computer.image}
                       alt={computer.name}
                       fill
                       priority
@@ -95,7 +96,7 @@ const SliderComp = ({ data }: { data: Computer[] }) => {
                     <span>{`Starting at ${computer.startingAt}/mo with`}</span>
                     <div className="h-5 w-12 mx-1 relative">
                       <Image
-                        src={'/iBuypower/svgs/icon-affirm.svg'}
+                        src={`${NEXT_PUBLIC_BASE_PATH}/svgs/icon-affirm.svg`}
                         alt={'affirm logo'}
                         fill
                         priority
