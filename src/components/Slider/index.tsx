@@ -65,7 +65,7 @@ const SliderComp = ({ data }: { data: Computer[] }) => {
                   </div>
                   <div className="w-auto h-60 my-5 relative">
                     <Image
-                      src={NEXT_PUBLIC_BASE_PATH + computer.image}
+                      src={computer.image}
                       alt={computer.name}
                       fill
                       priority
@@ -96,7 +96,7 @@ const SliderComp = ({ data }: { data: Computer[] }) => {
                     <span>{`Starting at ${computer.startingAt}/mo with`}</span>
                     <div className="h-5 w-12 mx-1 relative">
                       <Image
-                        src={`${NEXT_PUBLIC_BASE_PATH}/svgs/icon-affirm.svg`}
+                        src={'/svgs/icon-affirm.svg'}
                         alt={'affirm logo'}
                         fill
                         priority
