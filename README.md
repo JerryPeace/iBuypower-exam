@@ -8,7 +8,7 @@
 
   ```
   docker-compose up
-  open http://localhost:3000/iBuypower
+  open http://localhost:3000
 
   docker-compose stop
   ```
@@ -20,7 +20,7 @@
   ```
   pnpm install
   pnpm run start:local
-  open http://localhost:3000/iBuypower
+  open http://localhost:3000
   ```
 
 ### 2. Running App Tests
