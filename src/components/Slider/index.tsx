@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa6';
 import { Computer } from 'types/computer';
-import { NEXT_PUBLIC_BASE_PATH } from '@@configs';
 
 const SliderComp = ({ data }: { data: Computer[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
