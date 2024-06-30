@@ -95,7 +95,7 @@ const SliderComp = ({ data }: { data: Computer[] }) => {
                     <span>{`Starting at ${computer.startingAt}/mo with`}</span>
                     <div className="h-5 w-12 mx-1 relative">
                       <Image
-                        src={'/svgs/icon-affirm.svg'}
+                        src={'/iBuypower/svgs/icon-affirm.svg'}
                         alt={'affirm logo'}
                         fill
                         priority
