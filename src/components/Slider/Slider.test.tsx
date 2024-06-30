@@ -1,6 +1,6 @@
 import { Computer } from '@@types/computer';
 import { render, screen } from '@testing-library/react';
-import Slider from '../components/Slider';
+import Slider from './index';
 
 const computers: Computer[] = [
   {
